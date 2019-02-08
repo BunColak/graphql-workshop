@@ -35,7 +35,7 @@ const resolvers = {
         },
         async users(parent, args, ctx, info) {
             const limit = args.limit;
-            const size = args.size.toUpperCase();
+            const size = args.size ? args.size.toUpperCase() : undefined;
             if (size)
                 return await ctx.db
                     .collection('users')
