@@ -15,5 +15,6 @@ Navigate into the starter directory and start:
 
 ```
 cd starter
+npm install
 npm start
 ```
